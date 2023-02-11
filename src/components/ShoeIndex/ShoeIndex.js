@@ -42,13 +42,29 @@ const ShoeIndex = ({ sortId, setSortId }) => {
   );
 };
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 32px;
+  max-width: 1440px;
+  margin-inline: auto;
+`;
 
 const LeftColumn = styled.div``;
 
-const MainColumn = styled.div``;
+const MainColumn = styled.div`
+  flex: 1;
+  max-width: 1100px;
+`;
 
-const Header = styled.header``;
+const Header = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+`;
 
 const Title = styled.h2`
   font-size: 1.5rem;
